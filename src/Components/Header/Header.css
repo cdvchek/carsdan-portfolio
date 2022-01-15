@@ -1,0 +1,27 @@
+.Header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 9vh;
+    align-items: center;
+    justify-content: space-between;
+    background: lightgrey;
+}
+
+#title{
+    margin-left: 16px;
+}
+
+.link-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.link-button{
+    margin-right: 20px;
+    border: none;
+    background: none;
+    font-size: medium;
+}
