@@ -12,9 +12,9 @@ function Header(props) {
     <div className="Header">
       <h1 id="title">Carsdan Dvorachek</h1>
       <div className="link-buttons">
-        <button className="link-button" onClick={()=>goTo('home')}>Home</button>
-        <button className="link-button" onClick={()=>goTo('work')}>Work</button>
-        <button className="link-button" onClick={()=>goTo('about')}>About Me</button>
+        <button className="link-button" onClick={()=>goTo('home')}><span>Home</span></button>
+        <button className="link-button" onClick={()=>goTo('work')}><span>Work</span></button>
+        <button className="link-button" onClick={()=>goTo('about')}><span>About Me</span></button>
       </div>
     </div>
   );

@@ -1,0 +1,155 @@
+.Intro {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    color: white;
+}
+
+#bobbing {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    color: whitesmoke;
+    opacity: 0;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+}
+
+.starting {
+    animation-name: starting;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+span {
+    font-size: 54px;
+    position: absolute;
+}
+
+#one {
+    z-index: 4;
+    background: black;
+    padding-left: 150px;
+    bottom: 50%;
+    left: 36%;
+}
+
+.starting > #one {
+    animation-name: one;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+
+#two {
+    z-index: 3;
+    bottom: 50%;
+    left: 36%;
+}
+
+#three {
+    z-index: 2;
+    background: black;
+    padding-left: 200px;
+    bottom: 50%;
+    left: 36%;
+}
+
+#four {
+    z-index: 1;
+    bottom: 50%;
+    left: 36%;
+}
+
+.starting > #four {
+    animation-name: four;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .2s;
+}
+
+.needs-after {
+    opacity: 0;
+}
+
+.after {
+    animation-name: after;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+.card {
+    position: relative;
+    width: 90vw;
+    height: 70vh;
+    border: solid black;
+    margin: auto;
+}
+
+.card > img {
+    position: relative;
+    top: 4.3%;
+    left: 2.4%;
+    display: inline-block;
+    height: 90%;
+    border: solid red;
+}
+
+.inner-card {
+    display: inline-block;
+    position: absolute;
+    border: solid red;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes one {
+    from {
+        left: 36%;
+    }
+    to {
+        left: 22.85%;
+    }
+}
+
+@keyframes four {
+    from {
+        left: 36%;
+    }
+    to {
+        left: 52.6%;
+    }
+}
+
+@keyframes starting {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes after {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

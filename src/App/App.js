@@ -5,6 +5,7 @@ import Footer from '../Components/Footer/Footer';
 import Home from '../Components/Home-p/Home-p';
 import Work from '../Components/Work-p/Work-p';
 import About from '../Components/About-p/About-p';
+import Intro from '../Components/Intro/Intro';
 
 function App() {
   const [page,setPage] = useState('home');
@@ -22,9 +23,10 @@ function App() {
 
   return (
     <>
-      <Header setPage={setPage}></Header>
+      <Intro></Intro>
+      {/* <Header setPage={setPage}></Header> */}
       {renderBody(page)}
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 }
