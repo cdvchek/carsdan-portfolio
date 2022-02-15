@@ -1,0 +1,138 @@
+.Work {
+    position: relative;
+    top: 9vh;
+    height: 91vh;
+    width: 100vw;
+    background: black;
+    display:flex;
+    justify-content: center;
+}
+
+.big-card {
+    position: relative;
+    opacity: 0;
+    height: 60vh;
+    width: 25vw;
+    margin: 14.5vh 0 14.5vh 2vw;
+}
+
+.big-card:hover > .card {
+    filter: grayscale(60%) brightness(.6);
+}
+
+.big-card:hover > .card-buttons {
+    display: flex;
+}
+
+.card {
+    height: 60vh;
+    width: 25vw;
+    background: white;
+    display: inline-block;
+}
+
+.card-buttons {
+    display: none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 60vh;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-button {
+    margin: 7.5%;
+    color: white;
+    font-size: 150%;
+    background: black;
+    border: white solid 1px;
+    width: 60%;
+    height: 10%;
+    box-shadow: 10px 10px 10px black;
+}
+
+#big-card1 {
+    animation-name: card;
+    animation-delay: 2.7s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#card1 {
+    position: relative;
+    background-image: radial-gradient(farthest-corner at 40px 40px, #32a9ad 0%, #7376c2 100%);
+    color: white;
+    text-align: center;
+}
+
+#card1 > h1 {
+    margin: 0;
+    font-size:300%;
+    font-weight: bolder;
+    font-family: 'Architects Daughter';
+}
+
+#card1 > h1:nth-child(1) {
+    margin-top: 23%;
+}
+
+#card1 > img {
+    margin: 10% 7% 0 7%;
+}
+
+@keyframes card {
+    from {
+        right: 15px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+#big-card2 {
+    animation-name: card;
+    animation-delay: 2.9s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#card2 {
+    position: relative;
+    background: #ee9c04;
+    color: white;
+    text-align: center;
+}
+
+#lets-play-chess {
+    margin-top: 27%;
+}
+
+#card2 > img:nth-child(2), #card2 > img:nth-child(3) {
+    margin: 20% 7% 0 7%;
+}
+
+#big-card3 {
+    animation-name: card;
+    animation-delay: 2.8s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#card3 {
+    position: relative;
+    background: url('../../tabletopbackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+#card3 > h1 {
+    font-size: 250%;
+    margin-top: 30%;
+}

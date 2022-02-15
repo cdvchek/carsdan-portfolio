@@ -1,56 +1,51 @@
-.Header{
-    color: lightblue;
+.Header {
+    font-family: 'Open Sans';
+    color: white;
     display: flex;
     position: fixed;
-    top: 0;
+    top: 0vh;
     width: 100vw;
     height: 9vh;
     align-items: center;
-    justify-content: space-between;
-    background:rgb(5, 61, 44);
+    justify-content: flex-start;
+    background: black;
 }
 
-#title{
-    margin-left: 16px;
+#title {
+    position: relative;
+    height: 100%;
+    color: black;
+    background: white;
+    padding: 15px;
+    margin: auto 0;
 }
 
-.link-buttons{
-    display:flex;
-    align-items: center;
-    justify-content: right;
+.link-buttons {
+    height: 100%;
 }
 
-.link-button{
-    color: lightblue;
-    margin-right: 20px;
-    border: none;
+.link-button {
+    font-family: 'Open Sans';
+    font-weight: 600;
     background: none;
-    font-size: medium;
-    text-align: center;
-    transition: all 0.5s;
+    color: white;
+    border: none;
+    font-size: 115%;
+    margin-left: 35px;
+    height: 100%;
+    border-bottom: none;
 }
 
-.link-button span{
-    cursor: pointer;
-    display: inline-block;
-    position:relative;
-    transition: 0.5s;
+.link-button > span > a:link, .link-button > span > a:visited, .link-button > span > a:active {
+    color: white;
+    text-decoration: none;
 }
 
-.link-button span:after{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+.link-button:hover {
+    border-bottom: white solid;
+    color: rgb(52, 123, 145);
 }
 
-.link-button:hover span {
-    padding-right: 25px;
-}
-  
-.link-button:hover span:after {
-    opacity: 1;
-    right: 0;
+.link-button:hover > span > a:link, .link-button:hover > span > a:visited, .link-button:hover > span > a:active {
+    color: rgb(52,123,145);
 }
