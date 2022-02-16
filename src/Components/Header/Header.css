@@ -9,15 +9,23 @@
     align-items: center;
     justify-content: flex-start;
     background: black;
+    z-index: 5;
+}
+
+#title-box {
+    display: flex;
+    position:relative;
+    height: 9vh;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background: white;
 }
 
 #title {
     position: relative;
-    height: 100%;
     color: black;
-    background: white;
-    padding: 15px;
-    margin: auto 0;
 }
 
 .link-buttons {

@@ -6,14 +6,21 @@ import About from '../Components/About-p/About-p';
 import Intro from '../Components/Intro/Intro';
 
 function App() {
-  const [page,setPage] = useState('home');
-
+  const [page,setPage] = useState('work');
+  const [firstLoad,setFirstLoad] = useState(true);
   const renderBody = (page) => {
-    switch(page){
-      case 'about':
-        return <About></About>;
-      default:
-        return <Work></Work>;
+    if (firstLoad) {
+      setTimeout(() => {
+        setFirstLoad(false);
+        setPage('work');
+      },2600);
+    } else {
+      switch(page){
+        case 'about':
+          return <About></About>;
+        default:
+          return <Work></Work>;
+      }
     }
   }
 

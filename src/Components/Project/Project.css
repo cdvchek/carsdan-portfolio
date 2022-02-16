@@ -6,3 +6,21 @@
     height: 91vh;
     width: 100vw;
 }
+
+#content {
+    text-align: center;
+    margin: 10vw;
+}
+
+#back-btn {
+    position: relative;
+    top: 4vh;
+    left: 4vh;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 108%;
+}
+#back-btn:hover {
+    color: rgb(52, 123, 145);
+}

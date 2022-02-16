@@ -17,11 +17,7 @@
 }
 
 .big-card:hover > .card {
-    filter: grayscale(60%) brightness(.6);
-}
-
-.big-card:hover > .card-buttons {
-    display: flex;
+    box-shadow: 0 0 20px 10px rgb(52, 123, 145);
 }
 
 .card {
@@ -32,31 +28,28 @@
 }
 
 .card-buttons {
-    display: none;
-    top: 0;
-    left: 0;
     position: absolute;
-    height: 60vh;
+    bottom: 0;
+    left: 0;
+    height: 60px;
     width: 25vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: right;
 }
 
 .card-button {
-    margin: 7.5%;
+    margin-right: 16px;
     color: white;
-    font-size: 150%;
-    background: black;
-    border: white solid 1px;
-    width: 60%;
-    height: 10%;
-    box-shadow: 10px 10px 10px black;
+    font-size: 200%;
+    background: none;
+    border: none;
+}
+.card-button:hover > svg {
+    color: rgb(52, 123, 145);
 }
 
 #big-card1 {
     animation-name: card;
-    animation-delay: 2.7s;
+    animation-delay: 0.2s;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
@@ -96,7 +89,7 @@
 
 #big-card2 {
     animation-name: card;
-    animation-delay: 2.9s;
+    animation-delay: 0.4s;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
@@ -118,7 +111,7 @@
 
 #big-card3 {
     animation-name: card;
-    animation-delay: 2.8s;
+    animation-delay: 0.3s;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
