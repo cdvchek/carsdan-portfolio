@@ -8,8 +8,9 @@
 }
 
 #content {
-    text-align: center;
-    margin: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh 10vw 0 10vw;
 }
 
 #back-btn {
@@ -22,5 +23,41 @@
     font-size: 108%;
 }
 #back-btn:hover {
+    color: rgb(52, 123, 145);
+}
+
+#preview-web-img {
+    margin: 0 8vw 0 auto;
+    width: 500px;
+    height: 275px;
+}
+
+#project-title{
+    margin: 0;
+    color: white;
+}
+
+#description-title {
+    flex-basis: 100%;
+}
+
+#coders-thoughts-title {
+    flex-basis: 100%;
+}
+
+#coders-thoughts {
+    flex-basis: 100%;
+}
+
+.ext-btn {
+    font-weight: bolder;
+    font-size: 100%;
+    color: white;
+    background: none;
+    border: none;
+    margin: 1vh 10px 0 0;
+}
+
+.ext-btn:hover {
     color: rgb(52, 123, 145);
 }

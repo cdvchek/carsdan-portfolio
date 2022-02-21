@@ -129,3 +129,18 @@
     font-size: 250%;
     margin-top: 30%;
 }
+
+#portfolio-github {
+    font-weight: bolder;
+    position: absolute;
+    bottom: 3vh;
+    right: 3vh;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 100%;
+}
+
+#portfolio-github:hover {
+    color:rgb(52, 123, 145);
+}

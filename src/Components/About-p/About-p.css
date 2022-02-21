@@ -1,0 +1,31 @@
+.About {
+    display: flex;
+    position: relative;
+    top: 9vh;
+    background: black;
+    height: 91vh;
+    width: 100vw;
+}
+
+#mepic {
+    width: 36vw;
+    height: 36vw;
+    margin: auto 7vw;
+}
+
+#mecontent {
+    flex-basis: 50%;
+    height: 91vh;
+}
+
+#about-me-title {
+    margin: 7vw 7vw 2vw 7vw;
+    color: white;
+    font-size:275%;
+}
+
+#about-me-content {
+    color: white;
+    margin-left: 7vw;
+    font-size: 140%;
+}

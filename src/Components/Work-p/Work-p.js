@@ -4,22 +4,25 @@ import Project from '../Project/Project';
 
 function Work() {
 
-  const { p1Title, p1Desc , p1Thoughts } = {
+  const { p1Title, p1Desc , p1Thoughts, p1Image } = {
     p1Title: "Thirsty Thursdays",
     p1Desc: "Thirsty Thursdays is a tool dedicated to helping people save time. Whether you don't know what to make for dinner, or you are in the mood for a drink, Thirsty Thursdays will help you find that perfect meal.",
-    p1Thoughts: "Thirsty Thursdays was a fun small scale project that I worked on with 3 other peers. This project helped me not only learn how to use github to work with others, but it also made me realize my passion for logical problem solving."
+    p1Thoughts: "Thirsty Thursdays was a fun small scale project that I worked on with 3 other peers. This project helped me not only learn how to use github to work with others, but it also made me realize my passion for logical problem solving.",
+    p1Image: "./images/thirsty-thursdays-sc.png"
   }
 
-  const { p2Title, p2Desc, p2Thoughts } = {
+  const { p2Title, p2Desc, p2Thoughts, p2Image } = {
     p2Title: "TableTop",
     p2Desc: "blah blah blah",
-    p2Thoughts: "blah blah blah"
+    p2Thoughts: "blah blah blah",
+    p2Image: "./images/tabletop-sc.png"
   }
   
-  const { p3Title, p3Desc, p3Thoughts } = {
+  const { p3Title, p3Desc, p3Thoughts, p3Image } = {
     p3Title: "Let's Play Chess",
     p3Desc: "blah blah blah",
-    p3Thoughts: "blah blah blah"
+    p3Thoughts: "blah blah blah",
+    p3Image: "./images/lets-play-chess-sc.png"
   }
 
   const [view,setView] = useState('overview');
@@ -117,19 +120,20 @@ function Work() {
             </button>
           </div>
         </div>
+        <button id='portfolio-github' onClick={() => window.location = 'https://github.com/ChuckDvchek/carsdan-portfolio'}>Portfolio Github</button>
       </div>
     );
   } else if (view == 'thirsty-thursdays') {
     return (
-      <Project setView={setView} title={p1Title} description={p1Desc} thoughts={p1Thoughts}></Project>
+      <Project setView={setView} title={p1Title} description={p1Desc} thoughts={p1Thoughts} image={p1Image}></Project>
     )
   } else if (view == 'tabletop') {
     return (
-      <Project setView={setView} title={p2Title} description={p2Desc} thoughts={p2Thoughts}></Project>
+      <Project setView={setView} title={p2Title} description={p2Desc} thoughts={p2Thoughts} image={p2Image}></Project>
     )
   } else if (view == 'lets-play-chess') {
     return (
-      <Project setView={setView} title={p3Title} description={p3Desc} thoughts={p3Thoughts}></Project>
+      <Project setView={setView} title={p3Title} description={p3Desc} thoughts={p3Thoughts} image={p3Image}></Project>
     )
   }
 }
