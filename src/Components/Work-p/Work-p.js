@@ -4,11 +4,13 @@ import Project from '../Project/Project';
 
 function Work() {
 
-  const { p1Title, p1Desc , p1Thoughts, p1Image } = {
+  const { p1Title, p1Desc , p1Thoughts, p1Image, p1Github, p1Site } = {
     p1Title: "Thirsty Thursdays",
     p1Desc: "Thirsty Thursdays is a tool dedicated to helping people save time. Whether you don't know what to make for dinner, or you are in the mood for a drink, Thirsty Thursdays will help you find that perfect meal.",
     p1Thoughts: "Thirsty Thursdays was a fun small scale project that I worked on with 3 other peers. This project helped me not only learn how to use github to work with others, but it also made me realize my passion for logical problem solving.",
-    p1Image: "./images/thirsty-thursdays-sc.png"
+    p1Image: "./images/thirsty-thursdays-sc.png",
+    p1Github: "",
+    p1Site: ""
   }
 
   const { p2Title, p2Desc, p2Thoughts, p2Image } = {
@@ -125,7 +127,15 @@ function Work() {
     );
   } else if (view == 'thirsty-thursdays') {
     return (
-      <Project setView={setView} title={p1Title} description={p1Desc} thoughts={p1Thoughts} image={p1Image}></Project>
+      <Project 
+        setView={setView} 
+        title={p1Title} 
+        description={p1Desc} 
+        thoughts={p1Thoughts} 
+        image={p1Image}
+        github={p1Github}
+        site={p1Site}>
+      </Project>
     )
   } else if (view == 'tabletop') {
     return (

@@ -51,13 +51,30 @@
 
 .ext-btn {
     font-weight: bolder;
-    font-size: 100%;
-    color: white;
-    background: none;
+    font-size: 115%;
+    color: black;
+    background: white;
     border: none;
-    margin: 1vh 10px 0 0;
+    height: 4.8vh;
+    margin: 1vh 2vw 0 0;
+    border-radius: 0 10px 10px 0;
 }
 
-.ext-btn:hover {
+.ext-btn:hover > .project-btn-word {
     color: rgb(52, 123, 145);
+}
+
+#project-buttons {
+    width: 100%;
+    text-align: right;
+}
+
+.project-icon {
+    position: relative;
+    top: 3px;
+    right: 5px;
+    margin: 5px 5px 5px -11px;
+    background: rgb(52, 123, 145);
+    padding: 1.6vh 1vh .6vh 1vh;
+    border-radius: 10px 0 0 10px
 }
