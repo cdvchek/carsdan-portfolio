@@ -6,8 +6,8 @@ function Work() {
 
   const { p1Title, p1Desc , p1Thoughts, p1Image, p1Github, p1Site } = {
     p1Title: "Thirsty Thursdays",
-    p1Desc: "Thirsty Thursdays is a tool dedicated to helping people save time. Whether you don't know what to make for dinner, or you are in the mood for a drink, Thirsty Thursdays will help you find that perfect meal.",
-    p1Thoughts: "Thirsty Thursdays was a fun small scale project that I worked on with three other peers. This project helped me not only learn how to use github to work with others, but it also made me realize my passion for logical problem solving.",
+    p1Desc: "Thirsty Thursdays is a web-based tool dedicated to making meal planning more efficient for the average person. By entering an ingredient, Thirsty Thursdays will help the user find the perfect recipe for a meal or drink.",
+    p1Thoughts: "Thirsty Thursdays was a fun small-scale project that I built with three peers. Through this project, I collaborated with others using Github and Git, and I realized my passion for logical problem solving. As my first project, there were many takeaways and learnings that improved my future growth. From a technical perspective, this was my first encounter with HTML, CSS, and JavaScript. Overall, given my level of experience at the time, I am proud of this project and the underlying code. If I were to go back and make any adjustments, they would be minor improvements to the visuals in order to give the user more feedback when using the site. For example, informing the user when there is no available recipe for a searched ingredient.",
     p1Image: "./images/thirsty-thursdays-sc.png",
     p1Github: "https://github.com/ChuckDvchek/thirsty-thursdays",
     p1Site: "https://chuckdvchek.github.io/thirsty-thursdays/"
@@ -15,8 +15,8 @@ function Work() {
 
   const { p2Title, p2Desc, p2Thoughts, p2Image, p2Github, p2Github2, p2Site } = {
     p2Title: "TableTop",
-    p2Desc: "TableTop is a website that allows people to play Dungeons & Dragons onine. Dungeons & Dragons is mainly played in-person, but using TableTop's campaign and character management, along with a virtual tabletop, D&D can be played online.",
-    p2Thoughts: "This project was very ambitious given the 2 week time restraint I and my three other co-developers were given. This project taught me a lot about not only react, but that implementing a good user experience and user interface into anything takes a lot of time. I have gained a lot of appreciation for good ui/ux during this project.",
+    p2Desc: "TableTop is a website that allows people to play Dungeons & Dragons (D&D) online. While D&D is usually played in-person, utilizing TableTop's campaign and character management (along with a virtual tabletop), allows D&D to be played online with an unlimited amount of friends.",
+    p2Thoughts: "This project was very ambitious given the two-week time constraint my three other co-developers and I were given. Through this project, I gained technical knowledge of React and the practical knowledge that implementing a good user experience and user interface takes a lot of time. I gained a huge amount of appreciation for good UI/UX over the course of this project. The biggest strength of this project is the complex database with multiple relationships between the data tables that store account information, character details, campaign progress, etc.",
     p2Image: "./images/tabletop-sc.png",
     p2Github: "https://github.com/POlsen-92/TableTop-FrontEnd",
     p2Github2: "banana",
@@ -25,8 +25,8 @@ function Work() {
   
   const { p3Title, p3Desc, p3Thoughts, p3Image, p3Github, p3Site } = {
     p3Title: "Let's Play Chess",
-    p3Desc: "Let's Play Chess is a simple website that allows people to play chess against their friends over the internet.",
-    p3Thoughts: "This project was completed by myself and three other developers. This project was my first real test at coding logic as I wrote all the game code for chess.",
+    p3Desc: "Let's Play Chess is a website that allows individuals to play chess against their friends over the internet. A user creates a profile and invites their friends to play chess through notifications displayed on the site. Once playing, the chess board shows a user all possible moves for any given chess piece on their side of the board. Once the game ends, both users are sent to the main menu automatically.",
+    p3Thoughts: "This project was completed by myself and three other developers. My main responsibilities for this project were to code the game logic for chess and to implement Socket.io for real time interactions between users.",
     p3Image: "./images/lets-play-chess-sc.png",
     p2Github: "https://github.com/ChuckDvchek/chess-project-2",
     p2Site: "https://letsplaychessproj2.herokuapp.com/"
