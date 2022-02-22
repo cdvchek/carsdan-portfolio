@@ -28,8 +28,8 @@ function Work() {
     p3Desc: "Let's Play Chess is a website that allows individuals to play chess against their friends over the internet. A user creates a profile and invites their friends to play chess through notifications displayed on the site. Once playing, the chess board shows a user all possible moves for any given chess piece on their side of the board. Once the game ends, both users are sent to the main menu automatically.",
     p3Thoughts: "This project was completed by myself and three other developers. My main responsibilities for this project were to code the game logic for chess and to implement Socket.io for real time interactions between users.",
     p3Image: "./images/lets-play-chess-sc.png",
-    p2Github: "https://github.com/ChuckDvchek/chess-project-2",
-    p2Site: "https://letsplaychessproj2.herokuapp.com/"
+    p3Github: "https://github.com/ChuckDvchek/chess-project-2",
+    p3Site: "https://letsplaychessproj2.herokuapp.com/"
   }
 
   const [view,setView] = useState('overview');
