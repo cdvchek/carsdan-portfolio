@@ -19,7 +19,7 @@ function Work() {
     p2Thoughts: "This project was very ambitious given the two-week time constraint my three other co-developers and I were given. Through this project, I gained technical knowledge of React and the practical knowledge that implementing a good user experience and user interface takes a lot of time. I gained a huge amount of appreciation for good UI/UX over the course of this project. The biggest strength of this project is the complex database with multiple relationships between the data tables that store account information, character details, campaign progress, etc.",
     p2Image: "./images/tabletop-sc.png",
     p2Github: "https://github.com/POlsen-92/TableTop-FrontEnd",
-    p2Github2: "banana",
+    p2Github2: "https://github.com/POlsen-92/TableTop-BackEnd",
     p2Site: "https://table-top-fe.herokuapp.com/"
   }
   
