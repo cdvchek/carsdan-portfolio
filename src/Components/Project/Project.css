@@ -5,6 +5,7 @@
     background: black;
     height: 91vh;
     width: 100vw;
+    overflow: scroll;
 }
 
 #content {
@@ -39,14 +40,23 @@
 
 #description-title {
     flex-basis: 100%;
+    margin: 0;
+}
+
+#description {
+    margin: 10px 0 20px 0;
+    font-size: 120%;
 }
 
 #coders-thoughts-title {
     flex-basis: 100%;
+    margin: 0;
 }
 
 #coders-thoughts {
+    margin: 10px 0 0 0;
     flex-basis: 100%;
+    font-size: 120%;
 }
 
 .ext-btn {
@@ -56,7 +66,7 @@
     border: none;
     background: none;
     height: 4.8vh;
-    margin: 1vh 2vw 0 0;
+    margin: 2vh 1vw 2vh 0;
 }
 
 .ext-btn:hover > .project-btn-word {
