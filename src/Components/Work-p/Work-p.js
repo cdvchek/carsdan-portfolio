@@ -7,24 +7,29 @@ function Work() {
   const { p1Title, p1Desc , p1Thoughts, p1Image, p1Github, p1Site } = {
     p1Title: "Thirsty Thursdays",
     p1Desc: "Thirsty Thursdays is a tool dedicated to helping people save time. Whether you don't know what to make for dinner, or you are in the mood for a drink, Thirsty Thursdays will help you find that perfect meal.",
-    p1Thoughts: "Thirsty Thursdays was a fun small scale project that I worked on with 3 other peers. This project helped me not only learn how to use github to work with others, but it also made me realize my passion for logical problem solving.",
+    p1Thoughts: "Thirsty Thursdays was a fun small scale project that I worked on with three other peers. This project helped me not only learn how to use github to work with others, but it also made me realize my passion for logical problem solving.",
     p1Image: "./images/thirsty-thursdays-sc.png",
-    p1Github: "",
-    p1Site: ""
+    p1Github: "https://github.com/ChuckDvchek/thirsty-thursdays",
+    p1Site: "https://chuckdvchek.github.io/thirsty-thursdays/"
   }
 
-  const { p2Title, p2Desc, p2Thoughts, p2Image } = {
+  const { p2Title, p2Desc, p2Thoughts, p2Image, p2Github, p2Github2, p2Site } = {
     p2Title: "TableTop",
-    p2Desc: "blah blah blah",
-    p2Thoughts: "blah blah blah",
-    p2Image: "./images/tabletop-sc.png"
+    p2Desc: "TableTop is a website that allows people to play Dungeons & Dragons onine. Dungeons & Dragons is mainly played in-person, but using TableTop's campaign and character management, along with a virtual tabletop, D&D can be played online.",
+    p2Thoughts: "This project was very ambitious given the 2 week time restraint I and my three other co-developers were given. This project taught me a lot about not only react, but that implementing a good user experience and user interface into anything takes a lot of time. I have gained a lot of appreciation for good ui/ux during this project.",
+    p2Image: "./images/tabletop-sc.png",
+    p2Github: "https://github.com/POlsen-92/TableTop-FrontEnd",
+    p2Github2: "banana",
+    p2Site: "https://table-top-fe.herokuapp.com/"
   }
   
-  const { p3Title, p3Desc, p3Thoughts, p3Image } = {
+  const { p3Title, p3Desc, p3Thoughts, p3Image, p3Github, p3Site } = {
     p3Title: "Let's Play Chess",
-    p3Desc: "blah blah blah",
-    p3Thoughts: "blah blah blah",
-    p3Image: "./images/lets-play-chess-sc.png"
+    p3Desc: "Let's Play Chess is a simple website that allows people to play chess against their friends over the internet.",
+    p3Thoughts: "This project was completed by myself and three other developers. This project was my first real test at coding logic as I wrote all the game code for chess.",
+    p3Image: "./images/lets-play-chess-sc.png",
+    p2Github: "https://github.com/ChuckDvchek/chess-project-2",
+    p2Site: "https://letsplaychessproj2.herokuapp.com/"
   }
 
   const [view,setView] = useState('overview');
@@ -139,11 +144,28 @@ function Work() {
     )
   } else if (view == 'tabletop') {
     return (
-      <Project setView={setView} title={p2Title} description={p2Desc} thoughts={p2Thoughts} image={p2Image}></Project>
+      <Project
+        setView={setView}
+        title={p2Title}
+        description={p2Desc}
+        thoughts={p2Thoughts}
+        image={p2Image}
+        github={p2Github}
+        github2={p2Github2}
+        site={p2Site}>
+      </Project>
     )
   } else if (view == 'lets-play-chess') {
     return (
-      <Project setView={setView} title={p3Title} description={p3Desc} thoughts={p3Thoughts} image={p3Image}></Project>
+      <Project
+        setView={setView}
+        title={p3Title}
+        description={p3Desc}
+        thoughts={p3Thoughts}
+        image={p3Image}
+        github={p3Github}
+        site={p3Site}>
+      </Project>
     )
   }
 }

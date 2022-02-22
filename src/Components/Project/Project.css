@@ -53,11 +53,10 @@
     font-weight: bolder;
     font-size: 115%;
     color: black;
-    background: white;
     border: none;
+    background: none;
     height: 4.8vh;
     margin: 1vh 2vw 0 0;
-    border-radius: 0 10px 10px 0;
 }
 
 .ext-btn:hover > .project-btn-word {
@@ -69,12 +68,28 @@
     text-align: right;
 }
 
-.project-icon {
+.prj-icon-div {
+    display: inline;
+    margin: 0;
+}
+
+.prj-icon {
     position: relative;
-    top: 3px;
-    right: 5px;
-    margin: 5px 5px 5px -11px;
+    top: .5vh;
+    margin: 0;
     background: rgb(52, 123, 145);
     padding: 1.6vh 1vh .6vh 1vh;
-    border-radius: 10px 0 0 10px
+    border-radius: 10px 0 0 10px;
+}
+
+.prj-word-div {
+    display: inline;
+    margin:0;
+}
+
+.prj-word {
+    background: white;
+    margin: 0;
+    padding: 1.1vh;
+    border-radius: 0 10px 10px 0;
 }
