@@ -16,7 +16,7 @@ function Project(props) {
                 <p id="coders-thoughts">{thoughts}</p>
                 <div id="project-buttons">
                     { github2 ? (
-                            <button className="ext-btn" id="github-btn" onClick={() => window.location = github}>
+                            <button className="ext-btn" id="github-btn" onClick={() => window.location = github2}>
                                 <div className='prj-icon-div'>
                                     <span className='prj-icon'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -26,7 +26,7 @@ function Project(props) {
                                 </div>
                                 <div className='prj-word-div'>
                                     <span className='prj-word'>
-                                        Github Frontend
+                                        Github Backend
                                     </span>
                                 </div>
                             </button>
@@ -50,7 +50,7 @@ function Project(props) {
                             ) : (
                                 <div className='prj-word-div'>
                                     <span className='prj-word'>
-                                        Github Backend
+                                        Github Frontend
                                     </span>
                                 </div>
                             )
