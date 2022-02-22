@@ -2,7 +2,7 @@
   "name": "carsdan-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://carsdandvorachek.com",
+  "homepage": "https://chuckdvchek.github.io/carsdan-portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
