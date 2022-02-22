@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/carsdan-portfolio/static/css/main.4644fdfb.css",
-    "main.js": "/carsdan-portfolio/static/js/main.a76dbe49.js",
-    "static/media/tabletopbackground.jpeg": "/carsdan-portfolio/static/media/tabletopbackground.5ae86e1642b8dacdaddf.jpeg",
-    "index.html": "/carsdan-portfolio/index.html",
-    "main.4644fdfb.css.map": "/carsdan-portfolio/static/css/main.4644fdfb.css.map",
-    "main.a76dbe49.js.map": "/carsdan-portfolio/static/js/main.a76dbe49.js.map"
+    "main.css": "/static/css/main.d7da35a5.css",
+    "main.js": "/static/js/main.a76dbe49.js",
+    "static/media/tabletopbackground.jpeg": "/static/media/tabletopbackground.5ae86e1642b8dacdaddf.jpeg",
+    "index.html": "/index.html",
+    "main.d7da35a5.css.map": "/static/css/main.d7da35a5.css.map",
+    "main.a76dbe49.js.map": "/static/js/main.a76dbe49.js.map"
   },
   "entrypoints": [
-    "static/css/main.4644fdfb.css",
+    "static/css/main.d7da35a5.css",
     "static/js/main.a76dbe49.js"
   ]
 }
