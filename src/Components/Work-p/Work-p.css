@@ -5,7 +5,19 @@
     width: 100vw;
     background: black;
     display:flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#card-holder {
+    width: calc(380px * 2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .big-card {
@@ -13,7 +25,6 @@
     opacity: 0;
     height: 492.5px;
     width: 360px;
-    margin: 14.5vh 0 14.5vh 2vw;
 }
 
 .card {
@@ -38,9 +49,6 @@
     font-size: 200%;
     background: none;
     border: none;
-}
-.card-button:hover > svg {
-    color: rgb(52, 123, 145);
 }
 
 /* First Card */
@@ -77,6 +85,10 @@
 
 #big-card-northlake-timecards:hover > .card {
     box-shadow: 0 0 20px 10px rgb(204, 185, 129);
+}
+
+#card-button-github-northlake-timecard:hover > svg {
+    color: rgb(204, 185, 129);
 }
 
 /* Second Card */
