@@ -11,18 +11,14 @@
 .big-card {
     position: relative;
     opacity: 0;
-    height: 60vh;
-    width: 25vw;
+    height: 492.5px;
+    width: 360px;
     margin: 14.5vh 0 14.5vh 2vw;
 }
 
-.big-card:hover > .card {
-    box-shadow: 0 0 20px 10px rgb(52, 123, 145);
-}
-
 .card {
-    height: 60vh;
-    width: 25vw;
+    height: 492.5px;
+    width: 360px;
     background: white;
     display: inline-block;
 }
@@ -38,7 +34,7 @@
 
 .card-button {
     margin-right: 16px;
-    color: white;
+    color: black;
     font-size: 200%;
     background: none;
     border: none;
@@ -47,33 +43,75 @@
     color: rgb(52, 123, 145);
 }
 
-#big-card1 {
+/* First Card */
+#big-card-northlake-timecards {
     animation-name: card;
     animation-delay: 0.2s;
     animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 
-#card1 {
+#card-northlake-timecards {
     position: relative;
-    background-image: radial-gradient(farthest-corner at 40px 40px, #32a9ad 0%, #7376c2 100%);
-    color: white;
+    background-color: rgb(227, 224, 217);
+    color: black;
     text-align: center;
 }
 
-#card1 > h1 {
+#card-northlake-timecards > h2 {
     margin: 0;
     font-size:300%;
-    font-weight: bolder;
-    font-family: 'Architects Daughter';
+    font-weight: 250;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#card1 > h1:nth-child(1) {
+#card-northlake-timecards > h1:nth-child(1) {
     margin-top: 23%;
 }
 
-#card1 > img {
-    margin: 10% 7% 0 7%;
+#card-northlake-timecards > img {
+    margin: 27% 1.5px 18% 1.5px;
+    width: 285.6px;
+    height: 48.8px;
+}
+
+#big-card-northlake-timecards:hover > .card {
+    box-shadow: 0 0 20px 10px rgb(204, 185, 129);
+}
+
+/* Second Card */
+#big-card-uw-bootcamp-projects {
+    animation-name: card;
+    animation-delay: 0.3s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#card-uw-bootcamp-projects {
+    position: relative;
+    background: repeating-linear-gradient(
+        to right,
+        rgb(51, 0, 111),
+        rgb(51, 0, 111) 120px,
+        rgb(145,123,76) 120px,
+        rgb(145,123,76) 240px
+    );
+    color: rgb(235, 222, 168);
+    text-align: center;
+}
+
+#card-uw-bootcamp-projects > img {
+    margin: 15% 0 5% 0;
+    width: 160px;
+    height: 130px;
+}
+
+#card-uw-bootcamp-projects > h1 {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+#big-card-uw-bootcamp-projects:hover > .card {
+    box-shadow: 0 0 20px 10px rgb(86, 65, 110);
 }
 
 @keyframes card {
@@ -85,49 +123,6 @@
         right: 0;
         opacity: 1;
     }
-}
-
-#big-card2 {
-    animation-name: card;
-    animation-delay: 0.4s;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
-#card2 {
-    position: relative;
-    background: #ee9c04;
-    color: white;
-    text-align: center;
-}
-
-#lets-play-chess {
-    margin-top: 27%;
-}
-
-#card2 > img:nth-child(2), #card2 > img:nth-child(3) {
-    margin: 20% 7% 0 7%;
-}
-
-#big-card3 {
-    animation-name: card;
-    animation-delay: 0.3s;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-}
-
-#card3 {
-    position: relative;
-    background: url('../../tabletopbackground.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-}
-
-#card3 > h1 {
-    font-size: 250%;
-    margin-top: 30%;
 }
 
 #portfolio-github {
