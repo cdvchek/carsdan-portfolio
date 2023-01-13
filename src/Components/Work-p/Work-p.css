@@ -53,7 +53,7 @@
 
 /* First Card */
 #big-card-northlake-timecards {
-    animation-name: card;
+    animation-name: come-in;
     animation-delay: 0.2s;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -93,7 +93,7 @@
 
 /* Second Card */
 #big-card-uw-bootcamp-projects {
-    animation-name: card;
+    animation-name: come-in;
     animation-delay: 0.3s;
     animation-duration: .5s;
     animation-fill-mode: forwards;
@@ -126,7 +126,7 @@
     box-shadow: 0 0 20px 10px rgb(86, 65, 110);
 }
 
-@keyframes card {
+@keyframes come-in {
     from {
         right: 15px;
         opacity: 0;

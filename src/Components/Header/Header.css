@@ -21,6 +21,11 @@
     justify-content: center;
     margin: 0;
     background: white;
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.05s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 #title {
@@ -71,4 +76,55 @@
 
 .link-button:hover > span > a:link, .link-button:hover > span > a:visited, .link-button:hover > span > a:active {
     color: rgb(52,123,145);
+}
+
+#work-btn {
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.1s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#about-btn {
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.15s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#github-btn {
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.2s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#linkedin-btn {
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.25s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+#email-btn {
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.3s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes come-in {
+    from {
+        right: 15px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
 }

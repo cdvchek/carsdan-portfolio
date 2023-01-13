@@ -1,0 +1,15 @@
+.page-wrapper {
+    margin: 0 50px;
+}
+
+.disclaimer {
+    padding-top: 25px;
+}
+
+#disclaimer-bold {
+    font-weight: bold;
+}
+
+.last {
+    padding-bottom: 50px;
+}
