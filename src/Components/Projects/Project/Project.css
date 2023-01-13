@@ -1,0 +1,8 @@
+.work {
+    position: relative;
+    top: 7vh;
+    min-height: 91vh;
+    width: 100vw;
+    background: black;
+    color: white;
+}

@@ -2,12 +2,6 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 
 function Header(props) {
-  const { setPage } = props;
-
-  const goTo = (page) => {
-    console.log(page);
-    setPage(page);
-  }
 
   return (
     <div className="Header">
