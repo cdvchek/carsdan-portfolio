@@ -33,6 +33,7 @@
 }
 
 .link-button {
+    display: inline-block;
     font-family: 'Open Sans';
     font-weight: 600;
     background: none;
@@ -42,6 +43,20 @@
     margin-left: 35px;
     height: 100%;
     border-bottom: none;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.link-button:hover > .link {
+    color:rgb(52, 123, 145);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: white;
 }
 
 .link-button > span > a:link, .link-button > span > a:visited, .link-button > span > a:active {
