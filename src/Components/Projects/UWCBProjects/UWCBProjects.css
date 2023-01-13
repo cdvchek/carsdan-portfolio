@@ -1,5 +1,6 @@
 .page-wrapper {
     margin: 0 50px;
+    text-align: center;
 }
 
 .disclaimer {
@@ -12,4 +13,23 @@
 
 .last {
     padding-bottom: 50px;
+}
+
+.to-github {
+    text-decoration: none;
+    padding: 10px 10px 10px 15px;
+    background-color:lightgrey;
+    border-radius: 3.5px;
+    color: black;
+    margin: 0 10px;
+}
+
+.to-github:visited {
+    color: black;
+}
+
+.to-github > svg {
+    position: relative;
+    top: 4px;
+    right: 8px;
 }

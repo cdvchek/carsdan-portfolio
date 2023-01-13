@@ -146,6 +146,11 @@
     background: none;
     border: none;
     font-size: 100%;
+    opacity: 0;
+    animation-name: come-in;
+    animation-delay: 0.35s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 #portfolio-github:hover {
