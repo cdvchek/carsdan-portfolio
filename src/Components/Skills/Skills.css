@@ -1,0 +1,44 @@
+.Skills {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+#teal-box {
+    z-index: 0;
+    background-color: rgb(1, 165, 149);
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+}
+
+.skills-content {
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    max-width: 1500px;
+    height: 100%;
+}
+
+.skills-box {
+    display: flex;
+    background-color: white;
+    margin: 0 40px;
+    border: 2px rgb(1, 165, 149) solid;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.skill-title {
+    margin-top: 0px;
+}
+
+.skill-subtitle {
+    color: rgb(1, 165, 149);
+}
+
+#languages {
+    border-right: 2px solid rgb(174, 174, 174);
+}

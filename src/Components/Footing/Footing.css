@@ -1,0 +1,42 @@
+.Footing {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height:300px;
+    background-color: rgb(1, 165, 149);
+    margin-top: 40px;
+}
+
+.footing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    max-width: 1500px;
+    height: 100%;
+}
+
+.footing-content > svg {
+    margin: 0 80px;
+    color: white;
+}
+
+.footer-icon {
+    transition: all .2s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+.unanchor {
+    color: white;
+    text-decoration: none;
+    padding: none;
+    margin:0 80px;
+}
+
+.unanchor:visited {
+    color: white;
+}

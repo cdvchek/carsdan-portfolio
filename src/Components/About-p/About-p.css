@@ -1,31 +1,54 @@
 .About {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 9vh;
     background: black;
-    height: 91vh;
+    min-height: 91vh;
     width: 100vw;
+    color: white;
 }
 
 #mepic {
-    width: 36vw;
-    height: 36vw;
+    width: 35vw;
+    height: 35vw;
     margin: auto 7vw;
 }
 
-#mecontent {
+#personal {
     flex-basis: 50%;
-    height: 91vh;
+    min-height: 25vw;
 }
 
 #about-me-title {
     margin: 7vw 7vw 2vw 7vw;
     color: white;
-    font-size:275%;
+    font-size:225%;
 }
 
 #about-me-content {
     color: white;
     margin-left: 7vw;
-    font-size: 140%;
+}
+
+#technical {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7vw;
+    width: 86vw;
+}
+
+#technical-title {
+    color: white;
+    font-size:225%;
+    width: 100%;
+}
+
+.skill {
+    width: 42vw;
+}
+
+.p-title {
+    margin-top: 50px;
+    color:rgb(52, 123, 145);
 }

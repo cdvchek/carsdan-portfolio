@@ -28,6 +28,7 @@
 }
 
 .card {
+    border-radius: 20px;
     height: 492.5px;
     width: 360px;
     background: white;

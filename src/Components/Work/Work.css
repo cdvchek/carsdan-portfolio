@@ -1,0 +1,105 @@
+.Working {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+#work-title {
+    position: relative;
+    width: 100%;
+}
+
+.work-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    max-width: 1500px;
+    height: 100%;
+}
+
+.card-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-outline {
+    position: relative;
+    height: 150px;
+    width: 360px;
+}
+
+.normal-card {
+    border-radius: 20px;
+    height: 150px;
+    width: 360px;
+    background: white;
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+/* First Card */
+#normal-card-northlake-timecards {
+    position: relative;
+    background-color: rgb(227, 224, 217);
+    color: black;
+    text-align: center;
+}
+
+#normal-card-northlake-timecards > h2 {
+    margin: 0;
+    font-size:300%;
+    font-weight: 250;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#normal-card-northlake-timecards > h1:nth-child(1) {
+    margin-top: 23%;
+}
+
+#normal-card-northlake-timecards > img {
+    margin-top: 50px;
+    width: 285.6px;
+    height: 48.8px;
+}
+
+#card-outline-northlake-timecards:hover > .normal-card {
+    box-shadow: 0 0 20px 10px rgb(204, 185, 129);
+}
+
+/* Second Card */
+#normal-card-uw-bootcamp-projects {
+    position: relative;
+    background: repeating-linear-gradient(
+        to right,
+        rgb(51, 0, 111),
+        rgb(51, 0, 111) 120px,
+        rgb(145,123,76) 120px,
+        rgb(145,123,76) 240px
+    );
+    color: rgb(235, 222, 168);
+    text-align: center;
+}
+
+#normal-card-uw-bootcamp-projects > img {
+    margin: 20px;
+    width: 130px;
+    height: 110px;
+}
+
+#normal-card-uw-bootcamp-projects > h1 {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+#card-outline-uw-bootcamp-projects:hover > .normal-card {
+    box-shadow: 0 0 20px 10px rgb(86, 65, 110);
+}

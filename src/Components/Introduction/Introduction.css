@@ -1,0 +1,57 @@
+.Introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.white-div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.intro-content {
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    max-width: 1500px;
+    height: 100%;
+}
+
+#title-position {
+    margin-top: 85px;
+    margin-bottom: 10px;
+    font-size: 290%;
+}
+
+#sub-title {
+    margin-top: 0;
+    font-size: 150%;
+}
+
+#panda-img {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.teal-div {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: rgb(1, 165, 149);
+    color: white;
+}
+
+#about-me {
+    font-weight: 600;
+    font-size:130%;
+    margin: 70px 40px;
+}
+
+#about-me-title {
+    font-weight: 700;
+    font-size: 140%;
+}
