@@ -52,3 +52,11 @@
     margin-top: 50px;
     color:rgb(52, 123, 145);
 }
+
+#secret-btn {
+    visibility: hidden;
+}
+
+#secret-div:hover > #secret-btn {
+    visibility: visible;
+}

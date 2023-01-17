@@ -1,5 +1,6 @@
 import './About-p.css';
 import Header from '../Header/Header';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -17,6 +18,9 @@ function About() {
             </p>
           </div>
           <img id='mepic' alt='headshot of Carsdan Dvorachek' src='./images/carsdan-dvorachek.jpeg'/>
+          <div id='secret-div'>
+          <Link id='secret-btn' to="/home">Secret</Link>
+          </div>
       </div>
     </>
   );
