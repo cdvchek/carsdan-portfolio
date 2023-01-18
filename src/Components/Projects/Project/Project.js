@@ -4,7 +4,7 @@ import NLCCTimecard from '../NLCCTimecard/NLCCTimecard';
 import UWCBProjects from '../UWCBProjects/UWCBProjects';
 import Header from '../../Header/Header';
 
-function Project(props) {
+function Project() {
     const { id } = useParams();
 
     switch (id) {

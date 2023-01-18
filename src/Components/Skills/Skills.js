@@ -17,22 +17,24 @@ function Skills() {
             </ul>
             <h2 className='skill-subtitle'>Familiar</h2>
             <ul>
+              <li>Git</li>
               <li>Python</li>
               <li>Java</li>
-              <li>SQL</li>
-              <li>Git</li>
               <li>GML</li>
+              <li>SQL</li>
+              <li>C#</li>
             </ul>
           </div>
           <div id='technologies' className='skill'>
             <h1 className='skill-title'>Technologies</h1>
-            <ul>
+            <ul id='ul-tech'>
               <li>Node.js</li>
               <li>Express</li>
               <li>React</li>
               <li>Sequelize</li>
               <li>Handlebars</li>
               <li>MySQL</li>
+              <li>Socket.io</li>
             </ul>
           </div>
         </div>

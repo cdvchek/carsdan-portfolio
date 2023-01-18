@@ -42,3 +42,13 @@
 #languages {
     border-right: 2px solid rgb(174, 174, 174);
 }
+
+#ul-tech > li {
+    margin: 20px;
+    font-size: 110%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}

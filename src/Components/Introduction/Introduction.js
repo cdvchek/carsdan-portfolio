@@ -17,7 +17,7 @@ function Introduction() {
              I'm a web developer located in Orlando, Florida. I have found a serious passion for logical problem solving throughout my math and physics classes in both high school and university. <br/><br/>
              Like many people in their early twenties, I thoroughly enjoy playing video games with friends in my free time. For me, this interest comes with a love and appreciation for intuitive user experiences. <br/><br/>
              Having grown up in the Pacific Northwest, I love snowboarding, mountain biking and hiking. 
-             Living in Florida, I have discovered an interest in theme parks, kayaking, and long bike rides. Currently, I have a part time job with Walt Disney World as a Park Greeter at Hollywood Studios.
+             Living in Florida, I have discovered an interest in theme parks, kayaking, and long bike rides. Currently, I am with the Walt Disney Company as a Park Greeter at Hollywood Studios.
           </p>
         </div>
       </div>
