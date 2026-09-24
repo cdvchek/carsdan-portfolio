@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carsdan Dvorachek | Software Engineer</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="container">
+        <nav id="header" class="container-inner">
+
+            <a href="#home" id="logo-link">
+                <img
+                    id="cd-logo"
+                    src="./images/cd-logo-compressed.png"
+                    alt="Carsdan Dvorachek logo"
+                >
+            </a>
+
+            <div id="nav-links">
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact" id="contact-nav">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Hero -->
+        <section id="home" class="container">
+            <div id="hero" class="container-inner">
+
+                <h1>Software Engineer</h1>
+
+                <p>
+                    I build C++ applications from the ground up.
+                </p>
+
+                <img
+                    id="panda"
+                    src="./images/panda-compressed.png"
+                    alt="Panda"
+                >
+
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section id="about" class="container bg-teal">
+            <div class="container-inner centered-section">
+
+                <h2>Hi, my name is Carsdan!</h2>
+
+                <div class="about-text">
+
+                    <p>
+                        I'm a software engineer with a B.S. in Computer Science
+                        and a minor in Mathematics from the University of Central
+                        Florida. I enjoy understanding how software works beneath
+                        the surface and building systems from the ground up rather
+                        than treating them as black boxes.
+                    </p>
+
+                    <p>
+                        Lately, I've been developing my own 3D modeling software
+                        in C++ and OpenGL, which has given me the opportunity to
+                        work with graphics programming, mesh data structures,
+                        rendering, geometry, and application architecture. I enjoy
+                        solving difficult technical problems, debugging the details,
+                        and gradually turning complex systems into software that
+                        actually works.
+                    </p>
+
+                    <p>
+                        Outside of programming, you'll usually find me at the gym,
+                        playing games, or working on whatever project has caught
+                        my attention next.
+                    </p>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" class="container">
+            <div class="container-inner section">
+
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-group">
+                        <h3>Languages</h3>
+
+                        <p>C++</p>
+                        <p>C</p>
+                        <p>JavaScript</p>
+                        <p>Java</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Graphics & Systems</h3>
+
+                        <p>OpenGL</p>
+                        <p>GLSL</p>
+                        <p>Win32</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Web</h3>
+
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>React</p>
+                        <p>Node.js</p>
+                        <p>Express</p>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Tools</h3>
+
+                        <p>Git</p>
+                        <p>GitHub</p>
+                        <p>CMake</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" class="container bg-teal">
+            <div class="container-inner section">
+
+                <h2 class="section-title">Projects</h2>
+
+
+                <!-- 3D Modeling Software -->
+                <article class="project">
+
+                    <div class="project-media">
+
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source
+                                src="./images/modeling-preview.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <p class="project-label">
+                            Featured Project
+                        </p>
+
+                        <h3>3D Modeling Software</h3>
+
+                        <p>
+                            A 3D modeling application built from scratch
+                            using C++ and OpenGL.
+                        </p>
+
+                        <p>
+                            The application features a custom half-edge mesh
+                            structure, generational handles, ray-based vertex,
+                            edge and face selection, polygon triangulation,
+                            and interactive mesh editing tools.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>C++20</span>
+                            <span>OpenGL</span>
+                            <span>GLSL</span>
+                            <span>CMake</span>
+                            <span>Win32</span>
+                        </div>
+
+                        <a
+                            class="button white-button"
+                            href="YOUR-GITHUB-REPOSITORY"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Shader Sandbox -->
+                <article class="project">
+
+                    <div class="project-media">
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source
+                                src="./images/prism-preview.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+                    </div>
+
+                    <div class="project-info">
+
+                        <p class="project-label">
+                            Senior Project
+                        </p>
+
+                        <h3>Prism: The Shader Sandbox</h3>
+
+                        <p>
+                            An interactive shader development environment built as my
+                            Computer Science senior project.
+                        </p>
+
+                        <p>
+                            Prism provides a visual environment for writing,
+                            testing, and experimenting with GLSL shaders in real time,
+                            allowing changes to shader code to be immediately reflected
+                            in the rendered output.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OpenGL</span>
+                            <span>GLSL</span>
+                            <span>GLFW</span>
+                            <span>Dear ImGui</span>
+                            <span>GLM</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a
+                                class="button white-button"
+                                href="YOUR-SHADER-SANDBOX-GITHUB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View on GitHub
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Northlake Timecard -->
+                <article class="project">
+
+                    <div class="project-media">
+                        <img
+                            src="./images/northlake-timecard.png"
+                            alt="Northlake Timecard Management System"
+                        >
+                    </div>
+
+                    <div class="project-info">
+
+                        <p class="project-label">Contract Project</p>
+
+                        <h3>Timecard Management System</h3>
+
+                        <p>
+                            A custom timecard management application developed for
+                            Northlake Community Church to support its internal
+                            employee time-tracking workflow.
+                        </p>
+
+                        <p>
+                            Designed and developed around the organization's specific
+                            requirements, replacing a manual workflow with a dedicated
+                            software solution for recording and managing employee hours.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Sequelize</span>
+                            <span>Handlebars</span>
+                            <span>SQL</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a
+                                class="button white-button"
+                                href="YOUR-SHADER-SANDBOX-GITHUB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View on GitHub
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Northlake Expense Management -->
+                <article class="project">
+
+                    <div class="project-media">
+                        <img
+                            src="./images/northlake-expense-management.png"
+                            alt="Northlake Expense Management System"
+                        >
+                    </div>
+
+                    <div class="project-info">
+
+                        <p class="project-label">Contract Project</p>
+
+                        <h3>Expense Management System</h3>
+
+                        <p>
+                            A custom expense management application developed for
+                            Northlake Community Church to support its internal
+                            financial workflows.
+                        </p>
+
+                        <p>
+                            Built around the organization's requirements to provide
+                            a centralized system for submitting, organizing, and
+                            managing expense information.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Sequelize</span>
+                            <span>SQL</span>
+                        </div>
+
+                        <div class="project-buttons">
+                            <a
+                                class="button white-button"
+                                href="YOUR-SHADER-SANDBOX-GITHUB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View on GitHub
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Add additional projects like this -->
+
+                <!-- <article class="project">
+
+                    <div class="project-media">
+                        <img
+                            src="./images/project-placeholder.png"
+                            alt="Project"
+                        >
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Project Name</h3>
+
+                        <p>
+                            A short description explaining what the project
+                            does and what problem it solves.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>SQL</span>
+                        </div>
+
+                        <div class="project-buttons">
+
+                            <a
+                                class="button white-button"
+                                href="#"
+                            >
+                                GitHub
+                            </a>
+
+                            <a
+                                class="button outline-white-button"
+                                href="#"
+                            >
+                                Live Site
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article> -->
+
+            </div>
+        </section>
+
+
+        <!-- Experience -->
+        <section id="experience" class="container">
+            <div class="container-inner section">
+
+                <h2 class="section-title">Experience</h2>
+
+                <div class="experience-item">
+
+                    <div class="experience-heading">
+                        <h3>Software Developer</h3>
+
+                        <p>
+                            Northlake Community Church
+                        </p>
+                    </div>
+
+                    <div class="experience-content">
+
+                        <p>
+                            Developed custom internal software applications
+                            designed around the organization's operational
+                            needs.
+                        </p>
+
+                        <p>
+                            Worked directly with non-technical users to
+                            understand requirements, design solutions,
+                            troubleshoot problems, and deliver software for
+                            real-world use.
+                        </p>
+
+                        <p>
+                            See the Timecard and Expense Management Projects for more details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Education -->
+        <section id="education" class="container bg-teal">
+            <div class="container-inner section">
+
+                <h2 class="section-title">Education</h2>
+
+                <div class="education-list">
+
+                    <div class="education-item">
+
+                        <div>
+                            <h3>University of Central Florida</h3>
+
+                            <p>
+                                B.S. Computer Science
+                                <br>
+                                Minor in Mathematics
+                            </p>
+                        </div>
+
+                        <p class="education-date">
+                            2023 – 2026
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div>
+                            <h3>University of Washington</h3>
+
+                            <p>
+                                Certificate in Full Stack Web Development
+                            </p>
+                        </div>
+
+                        <p class="education-date">
+                            2021
+                        </p>
+
+                    </div>
+
+
+                    <div class="education-item">
+
+                        <div>
+                            <h3>Whatcom Community College</h3>
+
+                            <p>
+                                A.S. Mechanical / Civil / Aeronautical Engineering
+                            </p>
+                        </div>
+
+                        <p class="education-date">
+                            2018 – 2020
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" class="container">
+            <div class="container-inner contact-section">
+
+                <h2>Let's build something.</h2>
+
+                <p>
+                    I'm currently open to software engineering
+                    opportunities and freelance development work.
+                </p>
+
+                <div class="contact-links">
+
+                    <a href="mailto:YOUR-EMAIL">
+                        Email
+                    </a>
+
+                    <a
+                        href="YOUR-GITHUB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="YOUR-LINKEDIN"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="container">
+        <div class="container-inner footer">
+
+            <p>
+                © 2026 Carsdan Dvorachek
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
