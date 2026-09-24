@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Carsdan Dvorachek | Software Engineer</title>
+    <title>Carsdan Dvorachek</title>
+
+    <link rel="icon" type="image/png" href="./images/cropped_panda_compressed.png">
 
     <link rel="stylesheet" href="index.css">
 
@@ -27,7 +29,7 @@
                 <img
                     id="cd-logo"
                     src="./images/cd-logo-compressed.png"
-                    alt="Carsdan Dvorachek logo"
+                    alt="Carsdan Dvorachek"
                 >
             </a>
 
@@ -58,7 +60,7 @@
                 <img
                     id="panda"
                     src="./images/panda-compressed.png"
-                    alt="Panda"
+                    alt=""
                 >
 
             </div>
@@ -69,9 +71,11 @@
         <section id="about" class="container bg-teal">
             <div class="container-inner centered-section">
 
-                <h2>Hi, my name is Carsdan!</h2>
+                <h2 class="scroll-animation">
+                    Hi, my name is Carsdan!
+                </h2>
 
-                <div class="about-text">
+                <div class="about-text scroll-animation delay-1">
 
                     <p>
                         I'm a software engineer with a B.S. in Computer Science
@@ -107,11 +111,13 @@
         <section id="skills" class="container">
             <div class="container-inner section">
 
-                <h2 class="section-title">Skills</h2>
+                <h2 class="section-title scroll-animation">
+                    Skills
+                </h2>
 
                 <div class="skills-grid">
 
-                    <div class="skill-group">
+                    <div class="skill-group scroll-animation">
                         <h3>Languages</h3>
 
                         <p>C++</p>
@@ -120,15 +126,15 @@
                         <p>Java</p>
                     </div>
 
-                    <div class="skill-group">
+                    <div class="skill-group scroll-animation delay-1">
                         <h3>Graphics & Systems</h3>
 
                         <p>OpenGL</p>
                         <p>GLSL</p>
-                        <p>Win32</p>
+                        <p>Win32 API</p>
                     </div>
 
-                    <div class="skill-group">
+                    <div class="skill-group scroll-animation delay-2">
                         <h3>Web</h3>
 
                         <p>HTML</p>
@@ -138,7 +144,7 @@
                         <p>Express</p>
                     </div>
 
-                    <div class="skill-group">
+                    <div class="skill-group scroll-animation delay-3">
                         <h3>Tools</h3>
 
                         <p>Git</p>
@@ -156,15 +162,23 @@
         <section id="projects" class="container bg-teal">
             <div class="container-inner section">
 
-                <h2 class="section-title">Projects</h2>
+                <h2 class="section-title scroll-animation">
+                    Projects
+                </h2>
 
 
                 <!-- 3D Modeling Software -->
                 <article class="project">
 
-                    <div class="project-media">
+                    <div class="project-media scroll-animation scroll-left">
 
-                        <video autoplay loop muted playsinline preload="metadata">
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
+                        >
                             <source
                                 src="./images/modeling-preview.mp4"
                                 type="video/mp4"
@@ -173,7 +187,7 @@
 
                     </div>
 
-                    <div class="project-info">
+                    <div class="project-info scroll-animation scroll-right">
 
                         <p class="project-label">
                             Featured Project
@@ -187,10 +201,10 @@
                         </p>
 
                         <p>
-                            The application features a custom half-edge mesh
-                            structure, generational handles, ray-based vertex,
-                            edge and face selection, polygon triangulation,
-                            and interactive mesh editing tools.
+                            Features a custom half-edge mesh structure,
+                            generational handles, ray-based vertex, edge and
+                            face selection, polygon triangulation, and
+                            interactive mesh editing tools.
                         </p>
 
                         <div class="project-tech">
@@ -203,7 +217,7 @@
 
                         <a
                             class="button white-button"
-                            href="YOUR-GITHUB-REPOSITORY"
+                            href="https://github.com/cdvchek/modeling"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -214,36 +228,46 @@
 
                 </article>
 
+
                 <!-- Shader Sandbox -->
                 <article class="project">
 
-                    <div class="project-media">
-                        <video autoplay loop muted playsinline preload="metadata">
+                    <div class="project-media scroll-animation scroll-left">
+
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
+                        >
                             <source
                                 src="./images/prism-preview.mp4"
                                 type="video/mp4"
                             >
                         </video>
+
                     </div>
 
-                    <div class="project-info">
+                    <div class="project-info scroll-animation scroll-right">
 
                         <p class="project-label">
                             Senior Project
                         </p>
 
-                        <h3>Prism: The Shader Sandbox</h3>
+                        <h3>Shader Sandbox</h3>
 
                         <p>
-                            An interactive shader development environment built as my
-                            Computer Science senior project.
+                            A desktop graphics application developed as my
+                            Computer Science senior project for creating and
+                            experimenting with GLSL shaders in an interactive
+                            environment.
                         </p>
 
                         <p>
-                            Prism provides a visual environment for writing,
-                            testing, and experimenting with GLSL shaders in real time,
-                            allowing changes to shader code to be immediately reflected
-                            in the rendered output.
+                            Built in C++ using OpenGL with a Dear ImGui
+                            interface, providing a visual environment for
+                            working with shaders and rendered graphics.
                         </p>
 
                         <div class="project-tech">
@@ -255,47 +279,59 @@
                             <span>GLM</span>
                         </div>
 
-                        <div class="project-buttons">
-                            <a
-                                class="button white-button"
-                                href="YOUR-SHADER-SANDBOX-GITHUB"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View on GitHub
-                            </a>
-                        </div>
+                        <a
+                            class="button white-button"
+                            href="https://github.com/alecbkr/shader-sandbox"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                        </a>
 
                     </div>
 
                 </article>
 
-                <!-- Northlake Timecard -->
+
+                <!-- Timecard Management -->
                 <article class="project">
 
-                    <div class="project-media">
-                        <img
-                            src="./images/northlake-timecard.png"
-                            alt="Northlake Timecard Management System"
+                    <div class="project-media scroll-animation scroll-left">
+
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
                         >
+                            <source
+                                src="./images/timecard-preview.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
                     </div>
 
-                    <div class="project-info">
+                    <div class="project-info scroll-animation scroll-right">
 
-                        <p class="project-label">Contract Project</p>
+                        <p class="project-label">
+                            Contract Project
+                        </p>
 
                         <h3>Timecard Management System</h3>
 
                         <p>
-                            A custom timecard management application developed for
-                            Northlake Community Church to support its internal
-                            employee time-tracking workflow.
+                            A custom web application developed for Northlake
+                            Community Church to manage employee timecards and
+                            streamline its internal time-tracking workflow.
                         </p>
 
                         <p>
-                            Designed and developed around the organization's specific
-                            requirements, replacing a manual workflow with a dedicated
-                            software solution for recording and managing employee hours.
+                            Built with a Node.js and Express backend using
+                            Sequelize for database management, persistent
+                            user sessions, and Handlebars for server-rendered
+                            views.
                         </p>
 
                         <div class="project-tech">
@@ -307,48 +343,58 @@
                             <span>SQL</span>
                         </div>
 
-                        <div class="project-buttons">
-                            <a
-                                class="button white-button"
-                                href="YOUR-SHADER-SANDBOX-GITHUB"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View on GitHub
-                            </a>
-                        </div>
+                        <a
+                            class="button white-button"
+                            href="https://github.com/cdvchek/northlake-time-cards"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                        </a>
 
                     </div>
 
                 </article>
 
 
-                <!-- Northlake Expense Management -->
+                <!-- Expense Management -->
                 <article class="project">
 
-                    <div class="project-media">
-                        <img
-                            src="./images/northlake-expense-management.png"
-                            alt="Northlake Expense Management System"
+                    <div class="project-media scroll-animation scroll-left">
+
+                        <video
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            preload="metadata"
                         >
+                            <source
+                                src="./images/expense-preview.mp4"
+                                type="video/mp4"
+                            >
+                        </video>
+
                     </div>
 
-                    <div class="project-info">
+                    <div class="project-info scroll-animation scroll-right">
 
-                        <p class="project-label">Contract Project</p>
+                        <p class="project-label">
+                            Contract Project
+                        </p>
 
                         <h3>Expense Management System</h3>
 
                         <p>
-                            A custom expense management application developed for
-                            Northlake Community Church to support its internal
-                            financial workflows.
+                            A custom web application developed for Northlake
+                            Community Church to manage expenses and streamline
+                            its internal financial workflow.
                         </p>
 
                         <p>
-                            Built around the organization's requirements to provide
-                            a centralized system for submitting, organizing, and
-                            managing expense information.
+                            Built with a Node.js and Express backend using
+                            Sequelize for database management, user sessions,
+                            and a separate frontend and backend architecture.
                         </p>
 
                         <div class="project-tech">
@@ -359,69 +405,18 @@
                             <span>SQL</span>
                         </div>
 
-                        <div class="project-buttons">
-                            <a
-                                class="button white-button"
-                                href="YOUR-SHADER-SANDBOX-GITHUB"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View on GitHub
-                            </a>
-                        </div>
+                        <a
+                            class="button white-button"
+                            href="https://github.com/cdvchek/northlake-po-be"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub
+                        </a>
 
                     </div>
 
                 </article>
-
-
-                <!-- Add additional projects like this -->
-
-                <!-- <article class="project">
-
-                    <div class="project-media">
-                        <img
-                            src="./images/project-placeholder.png"
-                            alt="Project"
-                        >
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>Project Name</h3>
-
-                        <p>
-                            A short description explaining what the project
-                            does and what problem it solves.
-                        </p>
-
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-                            <span>SQL</span>
-                        </div>
-
-                        <div class="project-buttons">
-
-                            <a
-                                class="button white-button"
-                                href="#"
-                            >
-                                GitHub
-                            </a>
-
-                            <a
-                                class="button outline-white-button"
-                                href="#"
-                            >
-                                Live Site
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article> -->
 
             </div>
         </section>
@@ -431,9 +426,11 @@
         <section id="experience" class="container">
             <div class="container-inner section">
 
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title scroll-animation">
+                    Experience
+                </h2>
 
-                <div class="experience-item">
+                <div class="experience-item scroll-animation">
 
                     <div class="experience-heading">
                         <h3>Software Developer</h3>
@@ -446,20 +443,16 @@
                     <div class="experience-content">
 
                         <p>
-                            Developed custom internal software applications
-                            designed around the organization's operational
-                            needs.
+                            Developed and maintained two custom internal
+                            applications based on the organization's
+                            operational requirements.
                         </p>
 
                         <p>
                             Worked directly with non-technical users to
                             understand requirements, design solutions,
-                            troubleshoot problems, and deliver software for
-                            real-world use.
-                        </p>
-
-                        <p>
-                            See the Timecard and Expense Management Projects for more details.
+                            troubleshoot problems, and deliver software
+                            for real-world use.
                         </p>
 
                     </div>
@@ -474,11 +467,13 @@
         <section id="education" class="container bg-teal">
             <div class="container-inner section">
 
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title scroll-animation">
+                    Education
+                </h2>
 
                 <div class="education-list">
 
-                    <div class="education-item">
+                    <div class="education-item scroll-animation">
 
                         <div>
                             <h3>University of Central Florida</h3>
@@ -497,7 +492,7 @@
                     </div>
 
 
-                    <div class="education-item">
+                    <div class="education-item scroll-animation delay-1">
 
                         <div>
                             <h3>University of Washington</h3>
@@ -514,7 +509,7 @@
                     </div>
 
 
-                    <div class="education-item">
+                    <div class="education-item scroll-animation delay-2">
 
                         <div>
                             <h3>Whatcom Community College</h3>
@@ -540,14 +535,16 @@
         <section id="contact" class="container">
             <div class="container-inner contact-section">
 
-                <h2>Let's build something.</h2>
+                <h2 class="scroll-animation">
+                    Let's build something.
+                </h2>
 
-                <p>
+                <p class="scroll-animation delay-1">
                     I'm currently open to software engineering
                     opportunities and freelance development work.
                 </p>
 
-                <div class="contact-links">
+                <div class="contact-links scroll-animation delay-2">
 
                     <a href="mailto:YOUR-EMAIL">
                         Email
@@ -586,6 +583,9 @@
 
         </div>
     </footer>
+
+
+    <script src="index.js"></script>
 
 </body>
 

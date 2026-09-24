@@ -1,12 +1,17 @@
-/* -------------------- */
-/* General              */
-/* -------------------- */
+/* ======================================================== */
+/* Variables                                                */
+/* ======================================================== */
 
 :root {
     --teal: rgb(1, 165, 149);
     --text: #111111;
     --light-gray: #f5f5f5;
 }
+
+
+/* ======================================================== */
+/* General                                                  */
+/* ======================================================== */
 
 * {
     box-sizing: border-box;
@@ -24,6 +29,8 @@ body {
 
     color: var(--text);
     background: white;
+
+    overflow-x: hidden;
 }
 
 img,
@@ -48,9 +55,9 @@ p {
 }
 
 
-/* -------------------- */
-/* Layout               */
-/* -------------------- */
+/* ======================================================== */
+/* Layout                                                   */
+/* ======================================================== */
 
 .container {
     display: flex;
@@ -65,32 +72,33 @@ p {
 }
 
 .section {
-    padding: 100px 0;
+    padding: 110px 0;
 }
 
 .bg-teal {
-    background-color: var(--teal);
     color: white;
+    background-color: var(--teal);
 }
 
 .centered-section {
-    padding: 100px 0;
+    padding: 110px 0;
 
     text-align: center;
 }
 
 .section-title {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 
     font-size: 44px;
     font-weight: 800;
+
     text-align: center;
 }
 
 
-/* -------------------- */
-/* Header               */
-/* -------------------- */
+/* ======================================================== */
+/* Header                                                   */
+/* ======================================================== */
 
 #header {
     display: flex;
@@ -107,6 +115,14 @@ p {
 
 #cd-logo {
     width: 50px;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+#logo-link:hover #cd-logo {
+    transform: scale(1.07);
 }
 
 #nav-links {
@@ -117,14 +133,38 @@ p {
 }
 
 #nav-links a {
+    position: relative;
+
     font-size: 15px;
     font-weight: 500;
 
     text-decoration: none;
 
-    transition:
-        color 0.2s,
-        opacity 0.2s;
+    transition: color 0.2s ease;
+}
+
+#nav-links a:not(#contact-nav)::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--teal);
+
+    transform: scaleX(0);
+    transform-origin: right;
+
+    transition: transform 0.25s ease;
+}
+
+#nav-links a:not(#contact-nav):hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 #nav-links a:hover {
@@ -138,25 +178,35 @@ p {
 
     border: 1px solid var(--teal);
     border-radius: 30px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 #contact-nav:hover {
     color: white !important;
     background: var(--teal);
+
+    transform: translateY(-2px);
 }
 
 
-/* -------------------- */
-/* Hero                 */
-/* -------------------- */
+/* ======================================================== */
+/* Hero                                                     */
+/* ======================================================== */
 
 #hero {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
     min-height: 650px;
+
     padding: 80px 0 120px;
 
     text-align: center;
@@ -170,6 +220,8 @@ p {
     line-height: 0.95;
 
     letter-spacing: -5px;
+
+    animation: hero-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 #hero > p {
@@ -177,6 +229,8 @@ p {
 
     font-size: clamp(20px, 2vw, 26px);
     font-weight: 400;
+
+    animation: hero-enter 0.8s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 #panda {
@@ -188,12 +242,119 @@ p {
     border-radius: 50%;
 
     object-fit: cover;
+
+    animation: panda-enter 0.9s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+#panda:hover {
+    transform: translateY(-5px) rotate(2deg);
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes hero-enter {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes panda-enter {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+    }
 }
 
 
-/* -------------------- */
-/* About                */
-/* -------------------- */
+/* ======================================================== */
+/* Scroll Indicator                                         */
+/* ======================================================== */
+
+.scroll-indicator {
+    position: absolute;
+
+    bottom: 35px;
+
+    width: 25px;
+    height: 40px;
+
+    border: 2px solid var(--teal);
+    border-radius: 20px;
+
+    opacity: 0;
+
+    animation: indicator-enter 0.6s 1s ease forwards;
+}
+
+.scroll-indicator span {
+    position: absolute;
+
+    top: 8px;
+    left: 50%;
+
+    width: 4px;
+    height: 7px;
+
+    background: var(--teal);
+
+    border-radius: 10px;
+
+    transform: translateX(-50%);
+
+    animation: scroll-dot 1.8s infinite;
+}
+
+@keyframes indicator-enter {
+
+    to {
+        opacity: 0.7;
+    }
+}
+
+@keyframes scroll-dot {
+
+    0% {
+        opacity: 0;
+
+        transform: translate(-50%, 0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+
+        transform: translate(-50%, 14px);
+    }
+}
+
+
+/* ======================================================== */
+/* About                                                    */
+/* ======================================================== */
 
 #about h2 {
     margin-bottom: 40px;
@@ -204,6 +365,7 @@ p {
 
 .about-text {
     max-width: 850px;
+
     margin: 0 auto;
 }
 
@@ -218,9 +380,9 @@ p {
 }
 
 
-/* -------------------- */
-/* Skills               */
-/* -------------------- */
+/* ======================================================== */
+/* Skills                                                   */
+/* ======================================================== */
 
 .skills-grid {
     display: grid;
@@ -230,6 +392,22 @@ p {
     gap: 50px;
 
     text-align: center;
+}
+
+.skill-group {
+    padding: 20px 10px;
+
+    border-radius: 10px;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.skill-group:hover {
+    background: var(--light-gray);
+
+    transform: translateY(-5px);
 }
 
 .skill-group h3 {
@@ -248,9 +426,9 @@ p {
 }
 
 
-/* -------------------- */
-/* Projects             */
-/* -------------------- */
+/* ======================================================== */
+/* Projects                                                 */
+/* ======================================================== */
 
 .project {
     display: grid;
@@ -261,7 +439,7 @@ p {
 
     gap: 70px;
 
-    padding: 70px 0;
+    padding: 80px 0;
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
@@ -278,10 +456,10 @@ p {
 
 .project-media {
     width: 100%;
+
     min-width: 0;
 }
 
-/* Images AND video use the same project preview styling */
 .project-media img,
 .project-media video {
     display: block;
@@ -292,6 +470,23 @@ p {
     border-radius: 10px;
 
     background: white;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.project-media:hover img,
+.project-media:hover video {
+    transform: translateY(-6px) scale(1.01);
+
+    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.2);
+}
+
+.project-info {
+    min-width: 0;
 }
 
 .project-label {
@@ -303,11 +498,7 @@ p {
     letter-spacing: 2px;
     text-transform: uppercase;
 
-    opacity: 0.8;
-}
-
-.project-info {
-    min-width: 0;
+    opacity: 0.75;
 }
 
 .project-info h3 {
@@ -338,19 +529,24 @@ p {
 
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 30px;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
-.project-buttons {
-    display: flex;
-    flex-wrap: wrap;
+.project-tech span:hover {
+    color: var(--teal);
+    background: white;
 
-    gap: 12px;
+    transform: translateY(-2px);
 }
 
 
-/* -------------------- */
-/* Buttons              */
-/* -------------------- */
+/* ======================================================== */
+/* Buttons                                                  */
+/* ======================================================== */
 
 .button {
     display: inline-block;
@@ -365,16 +561,20 @@ p {
     border-radius: 30px;
 
     transition:
-        transform 0.2s,
-        background-color 0.2s;
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
 }
 
 .button:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .white-button {
     color: var(--teal);
+
     background: white;
 }
 
@@ -386,13 +586,14 @@ p {
 
 .outline-white-button:hover {
     color: var(--teal);
+
     background: white;
 }
 
 
-/* -------------------- */
-/* Experience           */
-/* -------------------- */
+/* ======================================================== */
+/* Experience                                               */
+/* ======================================================== */
 
 .experience-item {
     display: grid;
@@ -402,6 +603,7 @@ p {
     gap: 70px;
 
     max-width: 1000px;
+
     margin: 0 auto;
 }
 
@@ -424,9 +626,9 @@ p {
 }
 
 
-/* -------------------- */
-/* Education            */
-/* -------------------- */
+/* ======================================================== */
+/* Education                                                */
+/* ======================================================== */
 
 .education-list {
     max-width: 900px;
@@ -473,9 +675,9 @@ p {
 }
 
 
-/* -------------------- */
-/* Contact              */
-/* -------------------- */
+/* ======================================================== */
+/* Contact                                                  */
+/* ======================================================== */
 
 .contact-section {
     display: flex;
@@ -512,6 +714,8 @@ p {
 }
 
 .contact-links a {
+    position: relative;
+
     color: var(--teal);
 
     font-weight: 600;
@@ -519,14 +723,32 @@ p {
     text-decoration: none;
 }
 
-.contact-links a:hover {
-    text-decoration: underline;
+.contact-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -4px;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--teal);
+
+    transform: scaleX(0);
+
+    transition: transform 0.2s ease;
+}
+
+.contact-links a:hover::after {
+    transform: scaleX(1);
 }
 
 
-/* -------------------- */
-/* Footer               */
-/* -------------------- */
+/* ======================================================== */
+/* Footer                                                   */
+/* ======================================================== */
 
 .footer {
     padding: 25px 0;
@@ -545,9 +767,67 @@ p {
 }
 
 
-/* -------------------- */
-/* Tablet               */
-/* -------------------- */
+/* ======================================================== */
+/* Scroll Animations                                        */
+/* ======================================================== */
+
+.scroll-animation {
+    opacity: 0;
+
+    transform: translateY(45px);
+
+    transition:
+        opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-animation.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* Enter from left */
+
+.scroll-animation.scroll-left {
+    transform: translateX(-70px);
+}
+
+.scroll-animation.scroll-left.show {
+    transform: translateX(0);
+}
+
+
+/* Enter from right */
+
+.scroll-animation.scroll-right {
+    transform: translateX(70px);
+}
+
+.scroll-animation.scroll-right.show {
+    transform: translateX(0);
+}
+
+
+/* Staggered entrances */
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+
+/* ======================================================== */
+/* Tablet                                                   */
+/* ======================================================== */
 
 @media (max-width: 900px) {
 
@@ -571,6 +851,21 @@ p {
         gap: 35px;
     }
 
+    /*
+        Once projects stack vertically, horizontal entrances
+        aren't as useful. Let both parts rise from below.
+    */
+
+    .scroll-animation.scroll-left,
+    .scroll-animation.scroll-right {
+        transform: translateY(45px);
+    }
+
+    .scroll-animation.scroll-left.show,
+    .scroll-animation.scroll-right.show {
+        transform: translateY(0);
+    }
+
     .experience-item {
         grid-template-columns: 1fr;
 
@@ -579,9 +874,9 @@ p {
 }
 
 
-/* -------------------- */
-/* Mobile               */
-/* -------------------- */
+/* ======================================================== */
+/* Mobile                                                   */
+/* ======================================================== */
 
 @media (max-width: 650px) {
 
@@ -635,6 +930,10 @@ p {
         margin-top: 50px;
     }
 
+    .scroll-indicator {
+        display: none;
+    }
+
 
     /* About */
 
@@ -668,7 +967,7 @@ p {
     /* Projects */
 
     .project {
-        padding: 50px 0;
+        padding: 55px 0;
     }
 
     .project-info h3 {
@@ -693,5 +992,35 @@ p {
 
     .contact-section h2 {
         letter-spacing: -2px;
+    }
+}
+
+
+/* ======================================================== */
+/* Reduced Motion                                           */
+/* ======================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+    }
+
+    .scroll-animation,
+    .scroll-animation.scroll-left,
+    .scroll-animation.scroll-right {
+        opacity: 1;
+
+        transform: none;
     }
 }
